@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-47">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/CarterBensonProvisionalFootballOntology">
         <terms:license rdf:resource="https://opensource.org/licenses/BSD-3-Clause"/>
         <rdfs:comment xml:lang="en">All of the Common Core mid-level ontologies merged into one file, including all of BFO and a subset of RO. Provided for use-cases where one file representing a specific release of CCO that includes all content of its import dependencies is desirable to use over the set of individual files and import modules.</rdfs:comment>
         <owl:versionInfo xml:lang="en">Version 1.4</owl:versionInfo>
@@ -4217,6 +4217,14 @@ range: spatial region or site (immaterial continuant)
     
 
 
+    <!-- http://www.semanticweb.org/CarterBensonProvisionalFootballOntology/center-back-in-a-three -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CarterBensonProvisionalFootballOntology/center-back-in-a-three">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-Back"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/AdvancedPlayerRole -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/AdvancedPlayerRole">
@@ -5215,9 +5223,9 @@ range: spatial region or site (immaterial continuant)
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-Back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-BackPassAct">
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-Back">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/defender"/>
     </owl:Class>
     
@@ -5503,18 +5511,18 @@ range: spatial region or site (immaterial continuant)
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_left_full-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_left_full-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_left_full-BackPassAct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-BackPassAct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_left_full-back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-back"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_right_full-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_right_full-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_right_full-BackPassAct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-BackPassAct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/inverted_right_full-back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-back"/>
     </owl:Class>
     
 
@@ -5535,17 +5543,17 @@ range: spatial region or site (immaterial continuant)
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_center-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_center-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_center-BackPassAct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-BackPassAct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_center-back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-Back"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-BackPassAct">
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-back">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/full-BackPassAct"/>
     </owl:Class>
     
@@ -5623,18 +5631,18 @@ range: spatial region or site (immaterial continuant)
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_left_full-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_left_full-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_left_full-BackPassAct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-BackPassAct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_left_full-back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/left_full-back"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_right_full-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_right_full-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_right_full-BackPassAct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-BackPassAct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/orthodox_right_full-back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-back"/>
     </owl:Class>
     
 
@@ -5719,17 +5727,17 @@ range: spatial region or site (immaterial continuant)
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_center-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_center-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_center-BackPassAct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-BackPassAct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_center-back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/center-Back"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-BackPassAct -->
+    <!-- http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-back -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-BackPassAct">
+    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/right_full-back">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carte/ontologies/2023/3/untitled-ontology-41/full-BackPassAct"/>
     </owl:Class>
     
