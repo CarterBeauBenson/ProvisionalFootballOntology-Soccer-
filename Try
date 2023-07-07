@@ -1,0 +1,37 @@
+<playerAct> <rdf:type> <class> .
+<outOfPossessionAct> <rdf:type> <playerAct> .
+<outOfPossessionAct> <IAO_0000115> "An outOfPossessionAct is a playerAct that involves actions taken by a player when their team does not have control of the ball." .
+
+<offBallAct> <rdf:type> <inPossessionAct> .
+<rotationAct> <rdf:type> <offBallAct> .
+<rotationAct> <IAO_0000115> "A rotationAct is a subclass of offBallAct that involves the strategic movement of a player who does not directly control the ball." .
+
+<inPossessionAct> <rdf:type> <playerAct> .
+<inPossessionAct> <IAO_0000115> "An inPossessionAct is a playerAct that involves actions executed by players of the team that currently has control of the ball." .
+
+<onBallAct> <rdf:type> <inPossessionAct> .
+<onBallAct> <IAO_0000115> "An onBallAct is an inPossessionAct that involves a player maintaining control over the ball during gameplay. The distinguishing factor of a onBallAct from other types of inPossessionActs is the player's control and manipulation of the ball." .
+
+<passAct> <rdf:type> <onBallAct> .
+<passAct> <IAO_0000115> "A passAct is an onBallAct in which a player, who is in control of the ball, deliberately sends the ball to a teammate." .
+
+<crossAct> <rdf:type> <passAct> .
+<crossAct> <IAO_0000115> "A crossAct is passAct that involves sending the ball across the field, usually from a wide position into the penalty area, aiming to reach a teammate." .
+
+<giveAndGoAct> <rdf:type> <passAct> .
+<giveAndGoAct> <IAO_0000115> "A giveAndGoAct is a passAct that consists of a player passing the ball to a teammate and then immediately moving forward to receive a return pass." .
+
+<oneTouchPassAct> <rdf:type> <passAct> .
+<oneTouchPassAct> <IAO_0000115> "A oneTouchPassAct is a passAct where the player passes the ball immediately upon receiving it, using just one touch." .
+
+<throughPassAct> <rdf:type> <passAct> .
+<throughPassAct> <IAO_0000115> "A throughPassAct is a passAct in which a player sends the ball through the opponents' defensive line to a teammate, typically to create a scoring opportunity." .
+
+<backHeelPassAct> <rdf:type> <passAct> .
+<backHeelPassAct> <IAO_0000115> "A backHeelPassAct is a passAct that involves the player striking the ball with the back of their heel to pass it to a teammate, often employed to deceive the opposition." .
+
+<outsideFootPass> <rdf:type> <passAct> .
+<outsideFootPass> <IAO_0000115> "An outsideFootPass is a passAct where the player uses the outside of their foot to pass the ball, typically to curve it around an opponent or for a change in direction." .
+
+<pushPassAct> <rdf:type> <passAct> .
+<pushPassAct> <IAO_0000115> "A pushPassAct is a passAct that involves the player using the inside of their foot to gently push the ball to a teammate, typically used for short, accurate passes." .
