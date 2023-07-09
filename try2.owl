@@ -43,8 +43,6 @@
     <rdfs:label xml:lang="en">markingAct</rdfs:label>
 </owl:Class>
 
-<!-- ... -->
-
 <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2023/3/FutOn#00027">
     <rdfs:label xml:lang="en">pushPassAct</rdfs:label>
 </owl:Class>
