@@ -47,6 +47,47 @@
                                              rdfs:label "outOfPossessionAct"@en .
 
 
+###  http://purl.obolibrary.org/obo/FutOn_00006
+<http://purl.obolibrary.org/obo/FutOn_00006> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> ;
+                                             <IAO:0000115/definition> "an outOfPossessionAct, that involves a player positioning themselves close to a specific opposing player with the intent of limiting their influence on the game by preventing them from receiving the ball or obstructing their plays when they do have the ball,"@en ;
+                                             rdfs:label "markingAct"@en .
+
+
+###  http://purl.obolibrary.org/obo/FutOn_00007
+<http://purl.obolibrary.org/obo/FutOn_00007> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00006> ;
+                                             <IAO:0000115/definition> "is a markingAct where a defender is responsible for guarding a specific area of the pitch, rather than a specific player. The defender attempts to intercept any opponent or ball that enters their zone."@en ;
+                                             rdfs:label "manMarkingAct"@en .
+
+
+###  http://purl.obolibrary.org/obo/FutOn_00008
+<http://purl.obolibrary.org/obo/FutOn_00008> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00006> ;
+                                             <IAO:0000115/definition> "a markingAct where a defender is assigned a specific player from the opposing team to guard, with the intent to limit their influence on the game. The defender typically shadows their assigned player, staying close and attempting to disrupt their play."@en ;
+                                             rdfs:label "zonalMarkingAct"@en .
+
+
+###  http://purl.obolibrary.org/obo/FutOn_00009
+<http://purl.obolibrary.org/obo/FutOn_00009> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> .
+
+
+###  http://purl.obolibrary.org/obo/FutOn_00010
+<http://purl.obolibrary.org/obo/FutOn_00010> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00009> .
+
+
+###  http://purl.obolibrary.org/obo/FutOn_00011
+<http://purl.obolibrary.org/obo/FutOn_00011> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00009> .
+
+
+###  http://purl.obolibrary.org/obo/FutOn_00012
+<http://purl.obolibrary.org/obo/FutOn_00012> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> .
+
+
 ###  http://www.semanticweb.org/carte/ontologies/2023/6/untitled-ontology-63/FutOn:00001
 <http://www.semanticweb.org/carte/ontologies/2023/6/untitled-ontology-63/FutOn:00001> rdf:type owl:Class ;
                                                                                       <IAO:0000115/definition> "an intentionalAct that represents any action deliberately performed by an individual—such as a player, coach, or referee—during a game. These actions can range from playing actions (like shooting, passing, or tackling) performed by players, to strategic decisions and instructions given by coaches, to rulings and decisions made by referees."@en ;
