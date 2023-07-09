@@ -44,6 +44,7 @@
 ###  http://purl.obolibrary.org/obo/FutOn_00005
 <http://purl.obolibrary.org/obo/FutOn_00005> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00004> ;
+                                             <IAO:0000115/definition> "is a playerAct that involves actions taken by a player when their team does not have control of the ball."@en ;
                                              rdfs:label "outOfPossessionAct"@en .
 
 
@@ -70,22 +71,30 @@
 
 ###  http://purl.obolibrary.org/obo/FutOn_00009
 <http://purl.obolibrary.org/obo/FutOn_00009> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> .
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> ;
+                                             <IAO:0000115/definition> "an outOfPossessionAct that is performed by a player when they attempt to dispossess an opponent by physically challenging them for the ball."@en ;
+                                             rdfs:label "tackleAct"@en .
 
 
 ###  http://purl.obolibrary.org/obo/FutOn_00010
 <http://purl.obolibrary.org/obo/FutOn_00010> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00009> .
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00009> ;
+                                             <IAO:0000115/definition> "a tackleAct that is performed by a player when they position themselves in the path of the ball, typically while it is being shot or passed by an opponent, in an attempt to stop its progress or change its direction."@en ;
+                                             rdfs:label "blockTackleAct"@en .
 
 
 ###  http://purl.obolibrary.org/obo/FutOn_00011
 <http://purl.obolibrary.org/obo/FutOn_00011> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00009> .
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00009> ;
+                                             <IAO:0000115/definition> "a tackleAct that is performed by a player when they slide on the ground to challenge an opponent for the ball, typically with one leg extended."@en ;
+                                             rdfs:label "slideTackleAct"@en .
 
 
 ###  http://purl.obolibrary.org/obo/FutOn_00012
 <http://purl.obolibrary.org/obo/FutOn_00012> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> .
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00005> ;
+                                             <IAO:0000115/definition> "an outOfPossessionAct that is performed by a player when they disrupt an opponent's pass by moving into the ball's path, thereby gaining possession for their own team."@en ;
+                                             rdfs:label "interceptionAct"@en .
 
 
 ###  http://www.semanticweb.org/carte/ontologies/2023/6/untitled-ontology-63/FutOn:00001
