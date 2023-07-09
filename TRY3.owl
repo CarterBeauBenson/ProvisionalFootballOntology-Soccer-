@@ -434,6 +434,24 @@
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00060> ;
                                              rdfs:label "markingQuality"@en ;
                                              <IAO:0000115/definition> "A gameMeasurementQuality that represents an evaluation of the effectiveness of a player's markingAct in a game. This may be quantified by a number of factors, including but not limited to the number of times the marked opponent was dispossessed, the number of unsuccessful plays made by the marked opponent, the marked opponent's influence on the game relative to their average performance, and the outcome of the game."@en .
+###  http://purl.obolibrary.org/obo/FutOn_00065
+<http://purl.obolibrary.org/obo/FutOn_00065> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_10000> ;
+                                             rdfs:label "xGAlgorithm"@en ;
+                                             <IAO:0000115/definition> "An Algorithm that is specifically designed to take as input data about a shot, such as its distance, angle, context (e.g., open play, set-piece, etc.), and potentially other factors, and output an xGValue."@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00066
+<http://purl.obolibrary.org/obo/FutOn_00066> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_10000> ;
+                                             rdfs:label "xAAlgorithm"@en ;
+                                             <IAO:0000115/definition> "An Algorithm that is specifically designed to take as input data about a pass, such as its type, origin and destination points, and other contextual factors, and output an xAValue, which quantifies the likelihood that the given pass will lead to a shot and subsequently a goal."@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00067
+<http://purl.obolibrary.org/obo/FutOn_00067> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_10003> ;
+                                             rdfs:label "xPValue"@en ;
+                                             <IAO:0000115/definition> "A gameMeasurementQuantity that quantifies the predicted number of points a team is expected to earn from a game based on the team's total xGValue, which is calculated from individual shot xGValues during the game."@en .
+
 
 
 
