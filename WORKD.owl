@@ -4,7 +4,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 @base <http://www.semanticweb.org/carte/ontologies/2023/6/untitled-ontology-63> .
 
 <http://www.semanticweb.org/carte/ontologies/2023/6/untitled-ontology-63> rdf:type owl:Ontology .
@@ -21,12 +20,6 @@
 #    Classes
 #################################################################
 
-###  http://www.ontologyrepository.com/CommonCoreOntologies/Act
-cco:Act rdf:type owl:Class ;
-        rdfs:subClassOf obo:BFO_0000015 ;
-        cco:definition "A Process in which at least one Agent plays a causative role."@en ;
-        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
-        rdfs:label "Act"@en .
 
 ###  http://purl.obolibrary.org/obo/FutOn_00002
 <http://purl.obolibrary.org/obo/FutOn_00002> rdf:type owl:Class ;
