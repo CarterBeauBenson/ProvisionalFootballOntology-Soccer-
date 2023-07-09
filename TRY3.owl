@@ -452,6 +452,31 @@
                                              rdfs:label "xPValue"@en ;
                                              <IAO:0000115/definition> "A gameMeasurementQuantity that quantifies the predicted number of points a team is expected to earn from a game based on the team's total xGValue, which is calculated from individual shot xGValues during the game."@en .
 
+###  http://purl.obolibrary.org/obo/FutOn_00068
+<http://purl.obolibrary.org/obo/FutOn_00068> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000115> ;
+                                             rdfs:label "xPForGamblers"@en ;
+                                             <IAO:0000115/definition> "A PredictiveInformationContentEntity used to predict the outcome of a football match or series of matches, based on the sum of Expected Goals (xG) values of a team. It predicts the number of points a team is likely to earn from the match(es)."@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00069
+<http://purl.obolibrary.org/obo/FutOn_00069> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000115> ;
+                                             rdfs:label "xGforGamblers"@en ;
+                                             <IAO:0000115/definition> "A PredictiveInformationContentEntity used to predict the outcome of a football match, based on the quantity and quality of shots taken by a team or player. It quantifies the probability of each shot resulting in a goal, considering various factors like distance from the goal, angle to the goal, game context, and historical data."@en .
+###  http://purl.obolibrary.org/obo/FutOn_00070
+<http://purl.obolibrary.org/obo/FutOn_00070> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000115> ;
+                                             rdfs:label "clubPhilosophy"@en ;
+                                             <IAO:0000115/definition> "An Ideology that represents the guiding principles, values, and strategic approach a football club adopts and adheres to in its operations, including player development, game strategy, and club management."@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00071
+<http://purl.obolibrary.org/obo/FutOn_00071> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00070> ;
+                                             rdfs:label "xGPhilosophy"@en ;
+                                             <IAO:0000115/definition> "A clubPhilosophy that emphasizes the use of Expected Goals (xG) metrics in various aspects of the football club's operations and strategy, including player performance analysis, team strategy, talent scouting, and player training."@en .
+
+
+
 
 
 
