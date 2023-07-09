@@ -256,6 +256,126 @@
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00035> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "pushPassAct a passAct that involves the player using the inside of their foot to gently push the ball to a teammate, typically used for short, accurate passes."@en ;
                                              rdfs:label "pushPassAct"@en .
+###  http://purl.obolibrary.org/obo/FutOn_00044
+<http://purl.obolibrary.org/obo/FutOn_00044> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00041> ;
+                                             <IAO:0000115/definition> "a gameMeasurement that represents a numeric or quantifiable property derived from a game or game-related event."@en ;
+                                             rdfs:label "gameMeasurementQuantity"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00045
+<http://purl.obolibrary.org/obo/FutOn_00045> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that quantifies the total number of successful tackles performed by a player or a team during a game."@en ;
+                                             rdfs:label "tackleTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00046
+<http://purl.obolibrary.org/obo/FutOn_00046> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that quantifies the total number of successful interceptions performed by a player or a team during a game."@en ;
+                                             rdfs:label "interceptionTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00047
+<http://purl.obolibrary.org/obo/FutOn_00047> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a subclass of gameMeasurementQuantity that quantifies the total number of successful goals scored by a player or a team during a game."@en ;
+                                             rdfs:label "goalTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00048
+<http://purl.obolibrary.org/obo/FutOn_00048> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that specifically quantifies the number of shots taken or made during a game."@en ;
+                                             rdfs:label "shotTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00049
+<http://purl.obolibrary.org/obo/FutOn_00049> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00048> ;
+                                             <IAO:0000115/definition> "a shotTally that quantifies the total number of shots taken or made by an entire team during a game."@en ;
+                                             rdfs:label "teamShotTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00050
+<http://purl.obolibrary.org/obo/FutOn_00050> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00048> ;
+                                             <IAO:0000115/definition> "a ShotTally that quantifies the total number of shots taken or made by an individual player during a game."@en ;
+                                             rdfs:label "playerShotTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00051
+<http://purl.obolibrary.org/obo/FutOn_00051> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that specifically quantifies the total number of passes made during a game."@en ;
+                                             rdfs:label "passTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00052
+<http://purl.obolibrary.org/obo/FutOn_00052> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00051> ;
+                                             <IAO:0000115/definition> "a passTally that quantifies the total number of passes made by an individual player during a game."@en ;
+                                             rdfs:label "playerPassTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00053
+<http://purl.obolibrary.org<http://purl.obolibrary.org/obo/FutOn_00053> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00051> ;
+                                             <IAO:0000115/definition> "a passTally that quantifies the total number of passes made by an entire team during a game or game-related event."@en ;
+                                             rdfs:label "teamPassTally"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00054
+<http://purl.obolibrary.org/obo/FutOn_00054> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that specifically represents the output of an xGAlgorithm, quantifying the probability of a shot resulting in a goal in a game."@en ;
+                                             rdfs:label "xGValue"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00055
+<http://purl.obolibrary.org/obo/FutOn_00055> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00054> ;
+                                             <IAO:0000115/definition> "an xGValue that represents the xGValue for an individual player."@en ;
+                                             rdfs:label "xGValuePlayer"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00056
+<http://purl.obolibrary.org/obo/FutOn_00056> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00054> ;
+                                             <IAO:0000115/definition> "an xGValue that represents the total Expected Goals (xG) value for a team in a game, calculated as the sum of the xGValues for all individual players on the team."@en ;
+                                             rdfs:label "xGValueTeam"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00057
+<http://purl.obolibrary.org/obo/FutOn_00057> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that quantifies the likelihood that a given pass will lead to a shot and subsequently a goal, based on various factors such as the type of pass, its origin and destination points, and the historical data."@en ;
+                                             rdfs:label "xAValue"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00058
+<http://purl.obolibrary.org/obo/FutOn_00058> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00044> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuantity that quantifies the predicted number of points a team is expected to earn from a game based on the team's total xGValue, (which is calculated from individual shot xGValues during the game."@en ;
+                                             rdfs:label "xPValue"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00059
+<http://purl.obolibrary.org/obo/FutOn_00059> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00041> ;
+                                             <IAO:0000115/definition> "a gameMeasurement that specifically represents a qualitative or descriptive attribute associated with a game."@en ;
+                                             rdfs:label "gameMeasurementQuality"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00060
+<http://purl.obolibrary.org/obo/FutOn_00060> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00059> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuality that involves a comprehensive evaluation of game dynamics, player performance, and team strategy, based on the xG values and potentially including other qualitative assessments."@en ;
+                                             rdfs:label "xGAnalysis"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00061
+<http://purl.obolibrary.org/obo/FutOn_00061> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00059> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuality that assesses the quality of an individual player's performance during a game or game-related event, often on a scale (e.g., 1-10)."@en ;
+                                             rdfs:label "playerPerformanceRating"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00062
+<http://purl.obolibrary.org/obo/FutOn_00062> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00059> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuality that identifies a specific phase or period of a game or game-related event (e.g., first half, second half, overtime)."@en ;
+                                             rdfs:label "gamePhaseIdentification"@en .
+
+###  http://purl.obolibrary.org/obo/FutOn_00063
+<http://purl.obolibrary.org/obo/FutOn_00063> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00059> ;
+                                             <IAO:0000115/definition> "a gameMeasurementQuality that represents an evaluation of the effectiveness of a player's markingAct in a game. This may be quantified by a number of factors, including but not limited to the number of times the marked opponent was dispossessed, the number of unsuccessful plays made by the marked opponent, the marked opponent's influence on the game relative to their average performance, and the outcome of the game."@en ;
+                                             rdfs:label "markingQuality"@en .
+
 
 
 
