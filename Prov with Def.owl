@@ -16,9 +16,7 @@
 
 ###  http://purl.obolibrary.org/obo/IAO_0000115
 http://purl.obolibrary.org/obo/IAO_0000115 rdf:type owl:AnnotationProperty ;
-             http://purl.obolibrary.org/obo/IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
-                                "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
-              
+             
 
 #################################################################
 #    Classes
