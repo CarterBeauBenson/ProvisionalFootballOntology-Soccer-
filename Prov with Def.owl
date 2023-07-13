@@ -503,6 +503,116 @@
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00002> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A refereeAct that represents the action of making decisions on rule infractions during a game."@en ;
                                              rdfs:label "decisionAct"@en .
+foulDecisionAct rdf:type owl:Class ;
+    rdfs:subClassOf decisionAct ;
+    rdfs:label "foulDecisionAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A decisionAct that represents the referee's action of making a decision related to fouls committed by players during a game."@en .
+
+handballCall rdf:type owl:Class ;
+    rdfs:subClassOf foulDecisionAct ;
+    rdfs:label "handballCall"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A foulDecisionAct that signifies the referee's action of making a decision regarding a suspected handball offense."@en .
+
+offsideDecisionAct rdf:type owl:Class ;
+    rdfs:subClassOf foulDecisionAct ;
+    rdfs:label "offsideDecisionAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A foulDecisionAct that signifies the referee's action of deciding on potential offside situations in a game."@en .
+
+cardDecisionAct rdf:type owl:Class ;
+    rdfs:subClassOf foulDecisionAct ;
+    rdfs:label "cardDecisionAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A foulDecisionAct that encompasses the referee's action of deciding to issue a yellow or red card to a player."@en .
+
+yellowCardDecisionAct rdf:type owl:Class ;
+    rdfs:subClassOf cardDecisionAct ;
+    rdfs:label "yellowCardDecisionAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A cardDecisionAct that represents the referee's action of deciding to issue a yellow card to a player for a particular misconduct."@en .
+
+redCardDecisionAct rdf:type owl:Class ;
+    rdfs:subClassOf cardDecisionAct ;
+    rdfs:label "redCardDecisionAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A cardDecisionAct that signifies the referee's action of deciding to issue a red card, either for a severe infraction or for a second yellow card offense in the same game."@en .
+
+startingStoppingAct rdf:type owl:Class ;
+    rdfs:subClassOf refereeAct ;
+    rdfs:label "startingStoppingAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A refereeAct that denotes the action of starting and stopping play during a game."@en .
+
+foulRestartAct rdf:type owl:Class ;
+    rdfs:subClassOf startingStoppingAct ;
+    rdfs:label "foulRestartAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A startingStoppingAct that signifies the referee's action of restarting the game after a foul has been addressed."@en .
+
+foulStopAct rdf:type owl:Class ;
+    rdfs:subClassOf startingStoppingAct ;
+    rdfs:label "foulStopAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A startingStoppingAct that represents the referee's action of stopping the game due to a foul."@en .
+
+gameStartAct rdf:type owl:Class ;
+    rdfs:subClassOf startingStoppingAct ;
+    rdfs:label "gameStartAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A startingStoppingAct that represents the referee's action of initiating the start of a game."@en .
+
+gameStopAct rdf:type owl:Class ;
+    rdfs:subClassOf startingStoppingAct ;
+    rdfs:label "gameStopAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A startingStoppingAct that signifies the referee's action of calling the end of a game."@en .
+
+halfTimeStartAct rdf:type owl:Class ;
+    rdfs:subClassOf startingStoppingAct ;
+    rdfs:label "halfTimeStartAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A startingStoppingAct that denotes the referee's action of initiating the start of the second half of a game."@en .
+
+halfTimeStopAct rdf:type owl:Class ;
+    rdfs:subClassOf startingStoppingAct ;
+    rdfs:label "halfTimeStopAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A startingStoppingAct that embodies the referee's action of declaring the end of the first half of a game."@en .
+
+timeKeepingAct rdf:type owl:Class ;
+    rdfs:subClassOf refereeAct ;
+    rdfs:label "timeKeepingAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A refereeAct that encompasses all actions related to keeping track of time during a game."@en .
+
+gameClockMonitoringAct rdf:type owl:Class ;
+    rdfs:subClassOf timeKeepingAct ;
+    rdfs:label "gameClockMonitoringAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A timeKeepingAct that represents the referee's action of monitoring the overall game clock."@en .
+
+stoppageTimeAdjustmentAct rdf:type owl:Class ;
+    rdfs:subClassOf timeKeepingAct ;
+    rdfs:label "stoppageTimeAdjustmentAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A timeKeepingAct that denotes the referee's action of adding or subtracting stoppage time due to delays like injuries or interruptions."@en .
+
+halfTimeMonitoringAct rdf:type owl:Class ;
+    rdfs:subClassOf timeKeepingAct ;
+    rdfs:label "halfTimeMonitoringAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A timeKeepingAct that signifies the referee's action of keeping track of the time elapsed in each half of the game."@en .
+
+extraTimeMonitoringAct rdf:type owl:Class ;
+    rdfs:subClassOf timeKeepingAct ;
+    rdfs:label "extraTimeMonitoringAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A timeKeepingAct that embodies the referee's action of keeping track of additional time periods in games that may go into extra time or overtime."@en .
+
+fairPlayEnforcementAct rdf:type owl:Class ;
+    rdfs:subClassOf refereeAct ;
+    rdfs:label "fairPlayEnforcementAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A refereeAct that signifies actions aimed at enforcing the rules of the game and ensuring fair play."@en .
+
+misconductPenalizingAct rdf:type owl:Class ;
+    rdfs:subClassOf fairPlayEnforcementAct ;
+    rdfs:label "misconductPenalizingAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A fairPlayEnforcementAct that signifies the referee's action of penalizing player misconducts, in order to maintain fair play."@en .
+
+fairPlayAdvocacyAct rdf:type owl:Class ;
+    rdfs:subClassOf fairPlayEnforcementAct ;
+    rdfs:label "fairPlayAdvocacyAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A fairPlayEnforcementAct that denotes the referee's action of advocating for fair play, such as by managing player behavior, mediating disputes, or addressing unsportsmanlike conduct."@en .
+
+gameControlAct rdf:type owl:Class ;
+    rdfs:subClassOf fairPlayEnforcementAct ;
+    rdfs:label "gameControlAct"@en ;
+    <http://purl.obolibrary.org/obo/IAO_0000115> "A fairPlayEnforcementAct that embodies the referee's action of controlling the overall game situation to ensure fair play, such as by managing player emotions, defusing tense situations, and so on."@en .
+
 
 
 
