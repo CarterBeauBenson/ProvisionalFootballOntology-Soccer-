@@ -131,7 +131,7 @@
 
 ###  http://purl.obolibrary.org/obo/FutOn_00014
 <http://purl.obolibrary.org/obo/FutOn_00014> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00006> ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00112> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "rotationAct is an offBallAct that involves the strategic movement of a player who does not directly control the ball."@en ;
                                              rdfs:label "rotationAct"@en .
 
@@ -725,6 +725,13 @@
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00097> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A playerSelectionAct that represents the manager's action of selecting the squad for a game, including both the starting lineup and substitutes."@en ;
                                              rdfs:label "squadSelectionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00112
+<http://purl.obolibrary.org/obo/FutOn_00112> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00013> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An offBallAct that represents actions performed by a player when not in possession of the ball during a game."@en ;
+                                             rdfs:label "offBallAct"@en .
+
 
 
 
