@@ -636,6 +636,97 @@
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00093> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A fairPlayEnforcementAct that embodies the referee's action of controlling the overall game situation to ensure fair play, such as by managing player emotions, defusing tense situations, and so on."@en ;
                                              rdfs:label "gameControlAct"@en .
+### http://purl.obolibrary.org/obo/FutOn_00097
+<http://purl.obolibrary.org/obo/FutOn_00097> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00003> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A managerAct that represents the action of selecting which players will start the game or be on the bench."@en ;
+                                             rdfs:label "playerSelectionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00098
+<http://purl.obolibrary.org/obo/FutOn_00098> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00003> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A managerAct that signifies the manager's action of planning game strategies, deciding formations, and preparing tactical approaches."@en ;
+                                             rdfs:label "strategyPlanningAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00099
+<http://purl.obolibrary.org/obo/FutOn_00099> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00003> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A managerAct that denotes the manager's action of deciding when and which player should be substituted during a game."@en ;
+                                             rdfs:label "substitutionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00100
+<http://purl.obolibrary.org/obo/FutOn_00100> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00099> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substitutionAct that represents the manager's action of substituting a player due to injury."@en ;
+                                             rdfs:label "injurySubstitutionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00101
+<http://purl.obolibrary.org/obo/FutOn_00101> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00099> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substitutionAct that signifies the manager's action of substituting a player to implement a new tactical approach or to strengthen a particular area of the team."@en ;
+                                             rdfs:label "tacticalSubstitutionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00102
+<http://purl.obolibrary.org/obo/FutOn_00102> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00099> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substitutionAct that denotes the manager's action of substituting a player due to disciplinary issues, such as to prevent a player at risk of receiving a red card from being sent off."@en ;
+                                             rdfs:label "disciplinarySubstitutionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00103
+<http://purl.obolibrary.org/obo/FutOn_00103> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00099> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substitutionAct that represents the manager's action of substituting a player who is tired or not performing optimally due to fatigue."@en ;
+                                             rdfs:label "fatigueSubstitutionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00104
+<http://purl.obolibrary.org/obo/FutOn_00104> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00099> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substitutionAct that embodies the manager's action of substituting a player in order to waste time, usually towards the end of the game when the team is leading."@en ;
+                                             rdfs:label "timeWastingSubstitutionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00105
+<http://purl.obolibrary.org/obo/FutOn_00105> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00003> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A managerAct that embodies the manager's action of communicating instructions, feedback, or motivational speeches to players."@en ;
+                                             rdfs:label "communicationAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00106
+<http://purl.obolibrary.org/obo/FutOn_00106> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00003> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A managerAct that represents the action of a manager analyzing the strategies, strengths, and weaknesses of opponent teams."@en ;
+                                             rdfs:label "opponentAnalysisAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00107
+<http://purl.obolibrary.org/obo/FutOn_00107> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00098> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A strategyPlanningAct that represents the manager's action of selecting the team's formation for a game."@en ;
+                                             rdfs:label "formationSelectionAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00108
+<http://purl.obolibrary.org/obo/FutOn_00108> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00098> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A strategyPlanningAct that signifies the manager's action of preparing set piece strategies, such as free kicks, corners, or penalty kicks."@en ;
+                                             rdfs:label "setPiecePreparationAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00109
+<http://purl.obolibrary.org/obo/FutOn_00109> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00106> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An opponentAnalysisAct that represents the manager's action of analyzing the strategies, strengths, and weaknesses of specific opponent teams."@en ;
+                                             rdfs:label "oppositionAnalysisAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00110
+<http://purl.obolibrary.org/obo/FutOn_00110> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00106> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An opponentAnalysisAct that signifies the manager's action of assessing individual players of the opponent team, their strengths, weaknesses, and playing styles."@en ;
+                                             rdfs:label "playerAssessmentAct"@en .
+
+### http://purl.obolibrary.org/obo/FutOn_00111
+<http://purl.obolibrary.org/obo/FutOn_00111> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/FutOn_00097> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A playerSelectionAct that represents the manager's action of selecting the squad for a game, including both the starting lineup and substitutes."@en ;
+                                             rdfs:label "squadSelectionAct"@en .
+
+
 
 
 
