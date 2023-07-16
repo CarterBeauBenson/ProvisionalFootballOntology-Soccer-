@@ -748,6 +748,54 @@ obo:FutOn_00112 rdf:type owl:Class ;
                 rdfs:subClassOf obo:FutOn_00013 ;
                 obo:IAO_0000115 "An offBallAct that represents actions performed by a player when not in possession of the ball during a game."@en ;
                 rdfs:label "offBallAct"@en .
+##  http://purl.obolibrary.org/obo/FutOn_00113
+:00113 rdf:type owl:Class ;
+       rdfs:subClassOf :00014 ;
+       obo:IAO_0000115 "A playerAct that represents any action intentionally performed by a substitute player or non-playing athlete from the bench during a match."@en ;
+       rdfs:label "benchPlayerAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00114
+:00114 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete vocally encouraging their team from the sidelines. This can include cheering, chanting, or offering positive affirmations."@en ;
+       rdfs:label "benchPlayerCheeringAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00115
+:00115 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete engaging in conversations about game tactics and strategies with other bench members or coaches."@en ;
+       rdfs:label "benchPlayerStrategicDiscussionAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00116
+:00116 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete performing physical activity to prepare for potential entry into the match. This can include activities like stretching, jogging, and sport-specific drills."@en ;
+       rdfs:label "benchPlayerWarmUpAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00117
+:00117 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete assisting the coaching staff in various ways, such as relaying messages to on-field players or contributing to tactical decisions."@en ;
+       rdfs:label "benchPlayerCoachingAssistanceAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00118
+:00118 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete preparing to enter the match as a substitute, often in response to a coach's decision or a teammate's injury."@en ;
+       rdfs:label "benchPlayerSubstitutionReadinessAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00119
+:00119 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete consuming fluids to maintain hydration levels during the match."@en ;
+       rdfs:label "benchPlayerRehydrationAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00120
+:00120 rdf:type owl:Class ;
+       rdfs:subClassOf :00113 ;
+       obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete consuming energy-dense foods or supplements to maintain energy levels and readiness for potential match entry."@en ;
+       rdfs:label "benchPlayerNutritionAct"@en .
+
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ActionPermission
