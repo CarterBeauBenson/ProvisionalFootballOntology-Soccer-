@@ -796,6 +796,84 @@ obo:FutOn_00112 rdf:type owl:Class ;
        obo:IAO_0000115 "A BenchPlayerAct that involves a substitute player or non-playing athlete consuming energy-dense foods or supplements to maintain energy levels and readiness for potential match entry."@en ;
        rdfs:label "benchPlayerNutritionAct"@en .
 
+##  http://purl.obolibrary.org/obo/FutOn_00121
+:00121 rdf:type owl:Class ;
+       rdfs:subClassOf :00014 ;
+      obo:IAO_0000115 "An intentionalMatchAct that represents any action deliberately performed by an individual spectator during a match."@en ;
+       rdfs:label "fanAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00122
+:00122 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves vocal support, often in the form of shouting, chanting, or singing, aimed at encouraging a team or player."@en ;
+       rdfs:label "cheeringAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00123
+:00123 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves clapping hands to express approval, praise, or enthusiasm for a specific play or player."@en ;
+       rdfs:label "applaudingAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00124
+:00124 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves creating and showing banners or signs, usually to express support for a team or player, or to communicate a particular sentiment or message."@en ;
+       rdfs:label "bannerDisplayingAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00125
+:00125 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves posting on social media platforms about the match, typically to share views, express support, or engage with other fans."@en ;
+       rdfs:label "socialMediaPostingAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00126
+:00126 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves expressing disapproval or discontent, typically towards a particular player, team, or referee decision, by booing or jeering."@en ;
+       rdfs:label "booingAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00127
+:00127 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves intentional silence or non-participation in certain activities (like chants or applause) to express dissatisfaction or protest against an issue related to the match or the teams."@en ;
+       rdfs:label "silentProtestAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00128
+:00128 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves a spectator unlawfully entering the playing area during a match. This is generally considered dangerous and disrespectful, and it's usually strictly prohibited."@en ;
+       rdfs:label "pitchInvasionAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00129
+:00129 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves violent, disorderly, or destructive behavior, often resulting in harm to others or damage to property."@en ;
+       rdfs:label "hooliganismAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00130
+:00130 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves offensive, discriminatory, or hate-fueled chants or shouts. This can include racism, sexism, homophobia, and other forms of abuse."@en ;
+       rdfs:label "abusiveChantingAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00131
+:00131 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves throwing objects onto the pitch or at other spectators. This can be very dangerous and is usually strictly prohibited."@en ;
+       rdfs:label "projectileThrowingAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00132
+:00132 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves the intentional discomfort or harm of others through unwanted actions or behaviors, such as stalking or physical and verbal abuse."@en ;
+       rdfs:label "harassmentAct"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00133
+:00133 rdf:type owl:Class ;
+       rdfs:subClassOf :00121 ;
+      obo:IAO_0000115 "A fanAct that involves the deliberate damage or defacement of property, whether the venue's facilities, vehicles in the vicinity, or other fans' belongings."@en ;
+       rdfs:label "vandalismAct"@en .
+
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ActionPermission
