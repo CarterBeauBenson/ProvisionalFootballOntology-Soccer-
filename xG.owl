@@ -874,7 +874,107 @@ obo:FutOn_00112 rdf:type owl:Class ;
       obo:IAO_0000115 "A fanAct that involves the deliberate damage or defacement of property, whether the venue's facilities, vehicles in the vicinity, or other fans' belongings."@en ;
        rdfs:label "vandalismAct"@en .
 
+##  http://purl.obolibrary.org/obo/FutOn_00134
+obo:FutOn_00134 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00121 ;
+                obo:IAO_0000115 "A playerPosition in which a player is responsible for guarding the team's goal and preventing the opposing team from scoring. This is the only position allowed to handle the ball within the penalty area."@en ;
+                rdfs:label "goalkeeper"@en .
 
+##  http://purl.obolibrary.org/obo/FutOn_00135
+obo:FutOn_00135 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00121 ;
+                obo:IAO_0000115 "A playerPosition that involves a player primarily focusing on preventing the opposing team from scoring. Subclasses could include center-back, full-back, wing-back, and sweeper."@en ;
+                rdfs:label "defender"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00136
+obo:FutOn_00136 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00135 ;
+                obo:IAO_0000115 "A defender where the player occupies a central position in defense, typically focusing on intercepting passes, blocking shots, and marking opposing forwards."@en ;
+                rdfs:label "centerBack"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00137
+obo:FutOn_00137 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00135 ;
+                obo:IAO_0000115 "A defender where the player occupies the flanks of the defense, often contributing to both defensive tasks and attacking plays along the wings."@en ;
+                rdfs:label "fullBack"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00138
+obo:FutOn_00138 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00137 ;
+                obo:IAO_0000115 "A fullBack often used in formations that utilize three center-backs. These players patrol wide areas of the pitch, supporting both defensive and offensive tasks."@en ;
+                rdfs:label "wingBack"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00139
+obo:FutOn_00139 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00135 ;
+                obo:IAO_0000115 "A defender often positioned behind the line of defenders, focusing on clearing the ball from the defensive zone and covering defensive gaps."@en ;
+                rdfs:label "sweeper"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00140
+obo:FutOn_00140 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00121 ;
+                obo:IAO_0000115 "A player that involves a player operating in the area of the field between the defense and the forwards, often involved in both attacking and defensive duties. Subclasses could include central midfielder, attacking midfielder, defensive midfielder, and wide midfielder."@en ;
+                rdfs:label "midfielder"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00141
+obo:FutOn_00141 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00140 ;
+                obo:IAO_0000115 "A midfielder where the player is often involved in both attacking and defensive duties, distributing the ball, and maintaining possession."@en ;
+                rdfs:label "centralMidfielder"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00142
+obo:FutOn_00142 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00140 ;
+                obo:IAO_0000115 "A midfielder where the player is positioned closer to the forwards and focuses on creating scoring opportunities."@en ;
+                rdfs:label "attackingMidfielder"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00143
+obo:FutOn_00143 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00140 ;
+                obo:IAO_0000115 "A midfielder where the player is positioned closer to the defense and focuses on shielding the defensive line and disrupting opposing attacks."@en ;
+                rdfs:label "defensiveMidfielder"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00144
+obo:FutOn_00144 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00140 ;
+                obo:IAO_0000115 "A midfielder where the player occupies the flanks of the field, often contributing to both defensive tasks and attacking plays along the wings."@en ;
+                rdfs:label "wideMidfielder"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00145
+obo:FutOn_00145 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00144 ;
+                obo:IAO_0000115 "A wideMidfielder in which a player operates primarily on the left side of the field."@en ;
+                rdfs:label "leftMidfielder"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00146
+obo:FutOn_00146 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00134 ;
+                obo:IAO_0000115 "A playerPosition that involves a player primarily focusing on scoring goals and creating attacking opportunities."@en ;
+                rdfs:label "forward"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00147
+obo:FutOn_00147 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00146 ;
+                obo:IAO_0000115 "A forward where the player leads the attack by positioning centrally, often the primary target for scoring opportunities."@en ;
+                rdfs:label "centerForward"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00148
+obo:FutOn_00148 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00146 ;
+                obo:IAO_0000115 "A forward where the player supports the main striker, often dropping deeper into the midfield to receive the ball, turn, and run at the defense."@en ;
+                rdfs:label "secondStriker"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00149
+obo:FutOn_00149 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00146 ;
+                obo:IAO_0000115 "A forward where the player is positioned on the wide parts of the pitch, often focusing on delivering crosses into the penalty area."@en ;
+                rdfs:label "winger"@en .
+
+##  http://purl.obolibrary.org/obo/FutOn_00150
+obo:FutOn_00150 rdf:type owl:Class ;
+                rdfs:subClassOf obo:FutOn_00146 ;
+                obo:IAO_0000115 "A forward where the player, while nominally a striker, drops deep into midfield to disrupt defensive lines and create space for teammates."@en ;
+                rdfs:label "falseNine"@en .
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ActionPermission
 <http://www.ontologyrepository.com/CommonCoreOntologies/ActionPermission> rdf:type owl:Class ;
