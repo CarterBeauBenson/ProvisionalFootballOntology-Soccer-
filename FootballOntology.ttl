@@ -1,0 +1,371 @@
+@prefix futon: <http://www.footballontology.org/> .
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.footballontology.org/> a owl:Ontology ;
+    rdfs:label "Football Ontology"@en ;
+    dcterms:title "Football Ontology"@en ;
+    dcterms:created "2026-07-04"^^xsd:date ;
+    owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> ,
+        <https://www.commoncoreontologies.org/AgentOntology> ,
+        <https://www.commoncoreontologies.org/EventOntology> ,
+        <https://www.commoncoreontologies.org/ExtendedRelationOntology> ,
+        <https://www.commoncoreontologies.org/GeospatialOntology> ,
+        <https://www.commoncoreontologies.org/InformationEntityOntology> ,
+        <https://www.commoncoreontologies.org/QualityOntology> ,
+        <https://www.commoncoreontologies.org/TimeOntology> ,
+        <https://www.commoncoreontologies.org/UnitsOfMeasureOntology> ;
+    owl:versionInfo "Draft generated from pasted FutOn class list using BFO and CCO 2.0 patterns."@en ;
+    skos:editorialNote "No new object properties were introduced. Formal restrictions reuse BFO and CCO object properties where an available relation and class filler could be identified."@en .
+
+
+futon:AngleICE a owl:Class ;
+    rdfs:label "Angle ICE"@en ;
+    skos:definition "An Angle ICE is a Measurement Information Content Entity that describes some Shot Angle."@en ;
+    rdfs:subClassOf cco:ont00001163 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom futon:ShotAngle ]  .
+
+futon:AngleQuality a owl:Class ;
+    rdfs:label "Angle Quality"@en ;
+    skos:definition "An Angle Quality is a Relational Quality that inheres in two Fiat Lines that intersect at a shared Fiat Point."@en ;
+    rdfs:subClassOf obo:BFO_0000145 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom obo:BFO_0000142 ]  .
+
+futon:AssistTypeICE a owl:Class ;
+    rdfs:label "Assist Type ICE"@en ;
+    skos:definition "An Assist Type ICE is a Nominal Measurement Information Content Entity that describes the kind of some Pass Act."@en ;
+    rdfs:subClassOf cco:ont00000293 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom futon:PassAct ]  .
+
+futon:BodyPartICE a owl:Class ;
+    rdfs:label "Body Part ICE"@en ;
+    skos:definition "A Body Part ICE is a Nominal Measurement Information Content Entity that describes a Fiat Continuant Part of a Player that is agent in a Shot Act."@en ;
+    rdfs:subClassOf cco:ont00000293 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom obo:BFO_0000024 ]  .
+
+futon:CenterDefensiveMidfielder a owl:Class ;
+    rdfs:label "Center Defensive Midfielder"@en ;
+    skos:definition "A Center Defensive Midfielder is a Soccer Position Description that is about some Professional Soccer Player who bears one or more of the following an Anchor Role a Defensive Specialist Role a Box-to-Box Midfielder Role or a Deep-Lying Playmaker Role and that is about some Disposition or Quality characteristic of players occupying that position."@en ;
+    rdfs:subClassOf futon:SoccerPositionDescription ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001808 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ]  .
+
+futon:DefenderDistanceICE a owl:Class ;
+    rdfs:label "Defender Distance ICE"@en ;
+    skos:definition "A Defender Distance ICE is a Measurement Information Content Entity that describes some Shot-to-Defender Distance."@en ;
+    rdfs:subClassOf cco:ont00001163 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom futon:ShotToDefenderDistance ]  .
+
+futon:DistanceQuality a owl:Class ;
+    rdfs:label "Distance Quality"@en ;
+    skos:definition "A Distance Quality is a Relational Quality that inheres in two Fiat Points that are not identical."@en ;
+    rdfs:subClassOf obo:BFO_0000145 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom obo:BFO_0000147 ]  .
+
+futon:FinishingDisposition a owl:Class ;
+    rdfs:label "Finishing Disposition"@en ;
+    skos:definition "A Finishing Disposition is a Disposition that inheres in a Player that is realized in a Shot Act in which the bearer is agent and which precedes a Goal-Scoring Act."@en ;
+    rdfs:subClassOf obo:BFO_0000016 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000054 ; owl:someValuesFrom futon:ShotAct ]  .
+
+futon:FinishingXGValue a owl:Class ;
+    rdfs:label "Finishing xG Value"@en ;
+    skos:definition "A Finishing xG Value is a Designative Information Content Entity that designates the realization of some Finishing Disposition."@en ;
+    rdfs:subClassOf cco:ont00000686 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001916 ; owl:someValuesFrom futon:ShotAct ]  .
+
+futon:FirstHalfTemporalInterval a owl:Class ;
+    rdfs:label "First Half Temporal Interval"@en ;
+    skos:definition "A First Half Temporal Interval is a Temporal Interval that is a temporal part of exactly one Match Temporal Region is interval before some Second Half Temporal Interval and is the Temporal Interval in which First-Half Play occurs."@en ;
+    rdfs:subClassOf obo:BFO_0000202 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000139 ; owl:someValuesFrom futon:MatchTemporalRegion ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001940 ; owl:someValuesFrom futon:SecondHalfTemporalInterval ]  .
+
+futon:FirstHalfPlay a owl:Class ;
+    rdfs:label "First-Half Play"@en ;
+    skos:definition "A First-Half Play is a Process that occurs in a First Half Temporal Interval is a processual part of a Match has a Process Beginning that is a Whistle Act initiating the match and has a Process Ending that is a Whistle Act terminating the first half."@en ;
+    rdfs:subClassOf obo:BFO_0000015 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000199 ; owl:someValuesFrom futon:FirstHalfTemporalInterval ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001857 ; owl:someValuesFrom futon:Match ]  .
+
+futon:FootednessDisposition a owl:Class ;
+    rdfs:label "Footedness Disposition"@en ;
+    skos:definition "A Footedness Disposition is a Disposition that inheres in a Player and is realized when the Player preferentially uses one or both feet during footballing actions."@en ;
+    rdfs:subClassOf obo:BFO_0000016 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ]  .
+
+futon:FootednessICE a owl:Class ;
+    rdfs:label "Footedness ICE"@en ;
+    skos:definition "A Footedness ICE is a Nominal Measurement Information Content Entity that describes some Footedness Disposition and has value specification left right or both."@en ;
+    rdfs:subClassOf cco:ont00000293 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom futon:FootednessDisposition ]  .
+
+futon:Foul a owl:Class ;
+    rdfs:label "Foul"@en ;
+    skos:definition "A Foul is an Act that has agent exactly one Soccer Player has participant exactly one Soccer Player the agent and participant are not identical is an instance of a Physical Challenge has effect some Judgment Act realizing an Authority Role borne by a Referee with output a Descriptive Information Content Entity describing the infraction and is judged to have violated some Foul Rule."@en ;
+    rdfs:subClassOf cco:ont00000005 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000057 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:FoulRule ]  .
+
+futon:FoulRule a owl:Class ;
+    rdfs:label "Foul Rule"@en ;
+    skos:definition "A Foul Rule is a Process Regulation that prescribes the conditions under which a Physical Challenge between opposing Soccer Players are considered violations."@en ;
+    rdfs:subClassOf cco:ont00001324 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001942 ; owl:someValuesFrom cco:ont00000228 ]  .
+
+futon:GoalLine a owl:Class ;
+    rdfs:label "Goal Line"@en ;
+    skos:definition "A Goal Line is a Fiat Surface that is a tangential part of the Playing Area and is located between the inner edges of the Goalposts and the underside of the Crossbar."@en ;
+    rdfs:subClassOf obo:BFO_0000146 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001796 ; owl:someValuesFrom obo:BFO_0000029 ]  .
+
+futon:GoalLineCrossing a owl:Class ;
+    rdfs:label "Goal Line Crossing"@en ;
+    skos:definition "A Goal Line Crossing is a Process Ending that occurs precisely at the Temporal Instant when the entirety of a Soccer Ball spatially passes beyond the Goal Line terminating a Goal Scoring Event."@en ;
+    rdfs:subClassOf cco:ont00000083 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001918 ; owl:someValuesFrom obo:BFO_0000203 ]  .
+
+futon:GoalRule a owl:Class ;
+    rdfs:label "Goal Rule"@en ;
+    skos:definition "A Goal Rule is a Process Regulation that is a continuant part of the Laws of the Game and prescribes the conditions under which a Process constitutes a Goal."@en ;
+    rdfs:subClassOf cco:ont00001324 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001942 ; owl:someValuesFrom obo:BFO_0000015 ]  .
+
+futon:GoalScoringEvent a owl:Class ;
+    rdfs:label "Goal Scoring Event"@en ;
+    skos:definition "A Goal Scoring Event is an Act that has agent exactly one Soccer Player has process part exactly one Goal Line Crossing is judged by a Referee to have occurred in accordance with some Goal Rule and is prescribed by some Goal Rule."@en ;
+    rdfs:subClassOf cco:ont00000005 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001777 ; owl:someValuesFrom futon:GoalLineCrossing ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:GoalRule ]  .
+
+futon:GoalkeeperLocationICE a owl:Class ;
+    rdfs:label "Goalkeeper Location ICE"@en ;
+    skos:definition "A Goalkeeper Location ICE is a Measurement Information Content Entity that describes the Site that is location of a Goalkeeper at the time of a Shot Act."@en ;
+    rdfs:subClassOf cco:ont00001163 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom obo:BFO_0000029 ]  .
+
+futon:LawsOfTheGame a owl:Class ;
+    rdfs:label "Laws of the Game"@en ;
+    skos:definition "The Laws of the Game is a Prescriptive Information Content Entity that prescribes the roles, actions, constraints, and outcome conditions whose realization is required for an organized sporting activity to count as an instance of association football."@en ;
+    rdfs:subClassOf cco:ont00000965 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001942 ; owl:someValuesFrom futon:Match ]  .
+
+futon:MarkingAct a owl:Class ;
+    rdfs:label "Marking Act"@en ;
+    skos:definition "A Marking Act is a Planned Act that has agent exactly one Soccer Player and is prescribed by some Plan that has part some Objective to disrupt some Offensive Act that has participant some Opposing Player."@en ;
+    rdfs:subClassOf cco:ont00000228 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:TacticalPlan ]  .
+
+futon:Match a owl:Class ;
+    rdfs:label "Match"@en ;
+    skos:definition "A Match is a Process that occurs in a Match Temporal Region is prescribed by the Laws of the Game as consisting of competitive play between two opposing Teams has participant at least two Teams and at least one Referee and has processual parts including First-Half Play and Second-Half Play."@en ;
+    rdfs:subClassOf obo:BFO_0000015 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000199 ; owl:someValuesFrom futon:MatchTemporalRegion ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001777 ; owl:someValuesFrom futon:FirstHalfPlay ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001777 ; owl:someValuesFrom futon:SecondHalfPlay ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:LawsOfTheGame ]  .
+
+futon:MatchTemporalRegion a owl:Class ;
+    rdfs:label "Match Temporal Region"@en ;
+    skos:definition "A Match Temporal Region is a Temporal Region that has exactly one First Half Temporal Interval and exactly one Second Half Temporal Interval as temporal parts may include additional temporal parts such as extra time temporal intervals and is the totality of the temporal region in which a Match process occurs."@en ;
+    rdfs:subClassOf obo:BFO_0000008 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000121 ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass futon:FirstHalfTemporalInterval ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000121 ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass futon:SecondHalfTemporalInterval ]  .
+
+futon:OffsideInfraction a owl:Class ;
+    rdfs:label "Offside Infraction"@en ;
+    skos:definition "An Offside Infraction is an Act that has agent exactly one Soccer Player occurs in some Offside Position is judged by some Referee to have been an occurrent part of Play has effect a Loss of Possession and is prohibited by some Offside Infraction Rule."@en ;
+    rdfs:subClassOf cco:ont00000005 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000066 ; owl:someValuesFrom futon:OffsidePosition ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:OffsideInfractionRule ]  .
+
+futon:OffsideInfractionRule a owl:Class ;
+    rdfs:label "Offside Infraction Rule"@en ;
+    skos:definition "An Offside Infraction Rule is a Process Regulation that prescribes the conditions under which a Soccer Player occupying an Offside Position is agent in an Offside Infraction."@en ;
+    rdfs:subClassOf cco:ont00001324 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001942 ; owl:someValuesFrom futon:OffsideInfraction ]  .
+
+futon:OffsidePosition a owl:Class ;
+    rdfs:label "Offside Position"@en ;
+    skos:definition "An Offside Position is a Site that is location of a Soccer Player is located within the opponent's half of the field site excluding the halfway line is such that a fiat continuant part of the player is closer to the opponent's goal line than the ball and the second-last opponent and is prescribed by some Offside Position Rule."@en ;
+    rdfs:subClassOf obo:BFO_0000029 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000124 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ]  .
+
+futon:OpportunityXGValue a owl:Class ;
+    rdfs:label "Opportunity xG Value"@en ;
+    skos:definition "An Opportunity xG Value is a Designative Information Content Entity that designates the realization of some Positional Opportunity Disposition."@en ;
+    rdfs:subClassOf cco:ont00000686 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001916 ; owl:someValuesFrom cco:ont00000065 ]  .
+
+futon:PassAct a owl:Class ;
+    rdfs:label "Pass Act"@en ;
+    skos:definition "A Pass Act is a Planned Act that has agent exactly one Soccer Player has participant exactly one Soccer Player who is not identical to the agent and is prescribed by a Plan that has part an Objective the transfer of possession to the participant."@en ;
+    rdfs:subClassOf cco:ont00000228 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000057 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ]  .
+
+futon:PositionalOpportunityDisposition a owl:Class ;
+    rdfs:label "Positional Opportunity Disposition"@en ;
+    skos:definition "A Positional Opportunity Disposition is a Disposition that inheres in a Player and is realized when the Player is agent in an Act of Location Change that decreases Distance to the opposing team's Goal."@en ;
+    rdfs:subClassOf obo:BFO_0000016 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000054 ; owl:someValuesFrom cco:ont00000065 ]  .
+
+futon:PossessionAct a owl:Class ;
+    rdfs:label "Possession Act"@en ;
+    skos:definition "A Possession Act is a Planned Act that has agent exactly one Soccer Player and is prescribed by a Plan that has part an Objective to maintain control of the Soccer Ball."@en ;
+    rdfs:subClassOf cco:ont00000228 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ]  .
+
+futon:ProfessionalSoccerPlayer a owl:Class ;
+    rdfs:label "Professional Soccer Player"@en ;
+    skos:definition "A Professional Soccer Player is a Human that bears some Professional Soccer Player Occupation Role or some Professional Soccer Player Occupation Disposition."@en ;
+    rdfs:subClassOf cco:ont00001262 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000196 ; owl:someValuesFrom [ a owl:Class ; owl:unionOf ( futon:ProfessionalSoccerPlayerOccupationRole futon:ProfessionalSoccerPlayerOccupationDisposition ) ] ] ;
+    skos:editorialNote "The pasted genus 'Human' was aligned to CCO Person, which has skos:altLabel 'Human'."@en .
+
+futon:ProfessionalSoccerPlayerOccupationActivity a owl:Class ;
+    rdfs:label "Professional Soccer Player Occupation Activity"@en ;
+    skos:definition "A Professional Soccer Player Occupation Activity is an Occupation Activity in which a Professional Soccer Player participates that realizes either a Professional Soccer Player Occupation Disposition or a Professional Soccer Player Occupation Role."@en ;
+    rdfs:subClassOf cco:ont00001226 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000055 ; owl:someValuesFrom [ a owl:Class ; owl:unionOf ( futon:ProfessionalSoccerPlayerOccupationRole futon:ProfessionalSoccerPlayerOccupationDisposition ) ] ] ;
+    skos:editorialNote "The pasted genus 'Occupation Activity' was not found in the provided CCO/BFO files; it was aligned to CCO Act of Employment as the closest available CCO superclass."@en .
+
+futon:ProfessionalSoccerPlayerOccupationDisposition a owl:Class ;
+    rdfs:label "Professional Soccer Player Occupation Disposition"@en ;
+    skos:definition "A Professional Soccer Player Occupation Disposition is an Occupation Disposition that if realized is realized in some Process in which the bearer intends to perform and does perform Abilities and Skills specific to professional soccer in pursuit of obtaining or maintaining a Professional Soccer Player Occupation Role."@en ;
+    rdfs:subClassOf obo:BFO_0000016 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000054 ; owl:someValuesFrom obo:BFO_0000015 ] ;
+    skos:editorialNote "The pasted genus 'Occupation Disposition' was not found in the provided CCO/BFO files; it was aligned to BFO Disposition."@en .
+
+futon:ProfessionalSoccerPlayerOccupationRole a owl:Class ;
+    rdfs:label "Professional Soccer Player Occupation Role"@en ;
+    skos:definition "A Professional Soccer Player Occupation Role is an Occupation Role that if realized is realized in some Process in which the bearer provides labor or services related to professional soccer in exchange for compensation as specified by some Contract."@en ;
+    rdfs:subClassOf cco:ont00000984 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000197 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000054 ; owl:someValuesFrom cco:ont00001226 ]  .
+
+futon:SecondHalfTemporalInterval a owl:Class ;
+    rdfs:label "Second Half Temporal Interval"@en ;
+    skos:definition "A Second Half Temporal Interval is a Temporal Interval that is a temporal part of exactly one Match Temporal Region is interval after some First Half Temporal Interval and is the Temporal Interval in which Second-Half Play occurs."@en ;
+    rdfs:subClassOf obo:BFO_0000202 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000139 ; owl:someValuesFrom futon:MatchTemporalRegion ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001847 ; owl:someValuesFrom futon:FirstHalfTemporalInterval ]  .
+
+futon:SecondHalfPlay a owl:Class ;
+    rdfs:label "Second-Half Play"@en ;
+    skos:definition "A Second-Half Play is a Process that occurs in a Second Half Temporal Interval is a processual part of a Match has a Process Beginning that is a Whistle Act initiating the second half and has a Process Ending that is a Whistle Act terminating the match."@en ;
+    rdfs:subClassOf obo:BFO_0000015 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000199 ; owl:someValuesFrom futon:SecondHalfTemporalInterval ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001857 ; owl:someValuesFrom futon:Match ]  .
+
+futon:ShotAct a owl:Class ;
+    rdfs:label "Shot Act"@en ;
+    skos:definition "A Shot Act is a Planned Act that has agent exactly one Soccer Player and is prescribed by a Plan that has part an Objective that the ball enters the opponent's goal."@en ;
+    rdfs:subClassOf cco:ont00000228 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:TacticalPlan ]  .
+
+futon:ShotAngle a owl:Class ;
+    rdfs:label "Shot Angle"@en ;
+    skos:definition "A Shot Angle is an Angle that inheres in a pair of Fiat Lines intersecting at a Fiat Point that is part of a Soccer Ball and terminating at opposite ends of a Goal Frame."@en ;
+    rdfs:subClassOf futon:AngleQuality ;
+    skos:editorialNote "The pasted genus 'Angle' was not found as a CCO/BFO class; Shot Angle was aligned to the local class Angle Quality, which is a BFO Relational Quality."@en .
+
+futon:ShotDistanceICE a owl:Class ;
+    rdfs:label "Shot Distance ICE"@en ;
+    skos:definition "A Shot Distance ICE is a Measurement Information Content Entity that describes some Shot-to-Goal Distance."@en ;
+    rdfs:subClassOf cco:ont00001163 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom futon:ShotToGoalDistance ]  .
+
+futon:ShotFootICE a owl:Class ;
+    rdfs:label "Shot Foot ICE"@en ;
+    skos:definition "A Shot Foot ICE is a Body Part ICE that describes the Foot that is continuant part of a Player that strikes some Ball."@en ;
+    rdfs:subClassOf futon:BodyPartICE ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom obo:BFO_0000024 ]  .
+
+futon:ShotLocationICE a owl:Class ;
+    rdfs:label "Shot Location ICE"@en ;
+    skos:definition "A Shot Location ICE is a Measurement Information Content Entity that describes the Site that is location of a Ball or Player at the time of a Shot Act."@en ;
+    rdfs:subClassOf cco:ont00001163 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom obo:BFO_0000029 ]  .
+
+futon:ShotTypeICE a owl:Class ;
+    rdfs:label "Shot Type ICE"@en ;
+    skos:definition "A Shot Type ICE is a Nominal Measurement Information Content Entity that describes the kind of some Shot Act."@en ;
+    rdfs:subClassOf cco:ont00000293 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom futon:ShotAct ]  .
+
+futon:ShotVelocityICE a owl:Class ;
+    rdfs:label "Shot Velocity ICE"@en ;
+    skos:definition "A Shot Velocity ICE is a Measurement Information Content Entity that describes a Velocity that is proper occurrent part of some Shot Act."@en ;
+    rdfs:subClassOf cco:ont00001163 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom cco:ont00000763 ]  .
+
+futon:ShotToDefenderDistance a owl:Class ;
+    rdfs:label "Shot-to-Defender Distance"@en ;
+    skos:definition "A Shot-to-Defender Distance is a Distance Quality that inheres in a pair of Fiat Points one part of a Soccer Ball and the other part of an Opposing Player at the time of the Shot Act."@en ;
+    rdfs:subClassOf futon:DistanceQuality  .
+
+futon:ShotToGoalDistance a owl:Class ;
+    rdfs:label "Shot-to-Goal Distance"@en ;
+    skos:definition "A Shot-to-Goal Distance is a Distance Quality that inheres in a pair of Fiat Points one part of a Soccer Ball and the other part of the Goal Frame toward which a Shot Act is directed."@en ;
+    rdfs:subClassOf futon:DistanceQuality  .
+
+futon:SoccerFreeAgent a owl:Class ;
+    rdfs:label "Soccer Free Agent"@en ;
+    skos:definition "A Soccer Free Agent is a Human that is bearer of some Professional Soccer Player Disposition and not bearer of some Professional Soccer Player Role."@en ;
+    rdfs:subClassOf cco:ont00001262 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000196 ; owl:someValuesFrom futon:ProfessionalSoccerPlayerOccupationDisposition ] ,
+        [ a owl:Class ; owl:complementOf [ a owl:Restriction ; owl:onProperty obo:BFO_0000196 ; owl:someValuesFrom futon:ProfessionalSoccerPlayerOccupationRole ] ] ;
+    skos:editorialNote "The pasted genus 'Human' was aligned to CCO Person, which has skos:altLabel 'Human'."@en .
+
+futon:SoccerPositionDescription a owl:Class ;
+    rdfs:label "Soccer Position Description"@en ;
+    skos:definition "A Soccer Position Description is a Descriptive Information Content Entity that describes the bearer of some Tactical Role some Professional Soccer Player Disposition or some Quality."@en ;
+    rdfs:subClassOf cco:ont00000853 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001982 ; owl:someValuesFrom [ a owl:Class ; owl:unionOf ( futon:SoccerTacticalRole futon:ProfessionalSoccerPlayerOccupationDisposition obo:BFO_0000019 ) ] ]  .
+
+futon:SoccerTacticalRole a owl:Class ;
+    rdfs:label "Soccer Tactical Role"@en ;
+    skos:definition "A Soccer Tactical Role is a Role that if realized is realized when a Professional Soccer Player performs a Planned Act prescribed by some Tactical Plan during some Match."@en ;
+    rdfs:subClassOf obo:BFO_0000023 ,
+        [ a owl:Restriction ; owl:onProperty obo:BFO_0000054 ; owl:someValuesFrom cco:ont00000228 ]  .
+
+futon:Tackle a owl:Class ;
+    rdfs:label "Tackle"@en ;
+    skos:definition "A Tackle is a Planned Act that has agent exactly one Soccer Player and is prescribed by some Plan that has part some Objective to disrupt some Possession Act that has agent some Opposing Player."@en ;
+    rdfs:subClassOf cco:ont00000228 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001833 ; owl:someValuesFrom futon:ProfessionalSoccerPlayer ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001920 ; owl:someValuesFrom futon:TacticalPlan ]  .
+
+futon:TacticalPlan a owl:Class ;
+    rdfs:label "Tactical Plan"@en ;
+    skos:definition "A Tactical Plan is a Plan Specification that prescribes the coordinated behaviors of members of a Soccer Team during some Match in order to achieve some Objective or set of objectives determined by the team's coaching or managerial staff."@en ;
+    rdfs:subClassOf cco:ont00000974 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001942 ; owl:someValuesFrom cco:ont00000228 ] ;
+    skos:editorialNote "The pasted genus 'Plan Specification' was not found in the provided CCO/BFO files; it was aligned to CCO Plan."@en .
+
+futon:XGAlgorithm a owl:Class ;
+    rdfs:label "XG Algorithm"@en ;
+    skos:definition "An XG Algorithm is an Algorithm that prescribes an XG Computation."@en ;
+    rdfs:subClassOf cco:ont00000653 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001942 ; owl:someValuesFrom futon:XGComputation ]  .
+
+futon:XGComputation a owl:Class ;
+    rdfs:label "XG Computation"@en ;
+    skos:definition "An XG Computation is an Act of Data Transformation that has input some structured shot-event data and has output some xG value."@en ;
+    rdfs:subClassOf cco:ont00001158 ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001921 ; owl:someValuesFrom cco:ont00000958 ] ,
+        [ a owl:Restriction ; owl:onProperty cco:ont00001986 ; owl:someValuesFrom [ a owl:Class ; owl:unionOf ( futon:FinishingXGValue futon:OpportunityXGValue ) ] ]  .
